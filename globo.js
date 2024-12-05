@@ -16,6 +16,30 @@ window.onload = function () {
         $(this).remove();
     })
 
+    $(".globoAzul").click(function(){
+        puntos = puntos + 2;
+        $("#puntos").html(puntos);
+        $(this).remove();
+    })
+
+    $(".globoAmarillo").click(function(){
+        puntos = puntos + 3;
+        $("#puntos").html(puntos);
+        $(this).remove();
+    })
+
+    $(".globoVerde").click(function(){
+        puntos = puntos + 4;
+        $("#puntos").html(puntos);
+        $(this).remove();
+    })
+
+    $(".globoMorado").click(function(){
+        puntos = puntos + 5;
+        $("#puntos").html(puntos);
+        $(this).remove();
+    })
+
     function crearGlobos(){
         const colores = ["Rojo", "Azul", "Amarillo", "Verde", "Morado"];
 
