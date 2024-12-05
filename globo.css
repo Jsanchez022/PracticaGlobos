@@ -22,6 +22,22 @@ div.globo{
     align-items: center;
 }
 
+.globoRojo{
+    background-color: red;
+}
+.globoAzul{
+    background-color: blue;
+}
+.globoAmarillo{
+    background-color: yellow;
+}
+.globoVerde{
+    background-color: green;
+}
+.globoMorado{
+    background-color: purple;
+}
+
 div.triangulo{
     width: 0;
     height: 0;
@@ -39,6 +55,8 @@ div.cuerda{
     height: 60px;
     width: 0px;
     border: 1px solid black;
+    position: relative;
+    top: 50px;
 }
 
 div.leyenda{
