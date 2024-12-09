@@ -14,38 +14,44 @@ window.onload = function () {
         puntos = puntos + 1;
         $("#puntos").html(puntos);
         $(this).remove();
-    })
+    });
 
     $(".globoAzul").click(function(){
         puntos = puntos + 2;
         $("#puntos").html(puntos);
         $(this).remove();
-    })
+    });
 
     $(".globoAmarillo").click(function(){
         puntos = puntos + 3;
         $("#puntos").html(puntos);
         $(this).remove();
-    })
+    });
 
     $(".globoVerde").click(function(){
         puntos = puntos + 4;
         $("#puntos").html(puntos);
         $(this).remove();
-    })
+    });
 
     $(".globoMorado").click(function(){
         puntos = puntos + 5;
         $("#puntos").html(puntos);
         $(this).remove();
-    })
+    });
+
+    $(".globo").click(function(){
+        if(puntos == 60){
+            alert("Usted a ganado")
+        }
+    });
 
     function crearGlobos(){
-        const colores = ["Rojo", "Azul", "Amarillo", "Verde", "Morado"];
+        const colors = ["Rojo", "Azul", "Amarillo", "Verde", "Morado"];
 
-        for (let i = 0; i < colores.length; i++) {
+        for (let i = 0; i < colors.length; i++) {
 
-            const claseActual = "globo" + colores[i];
+            const claseActual = "globo" + colors[i];
 
             for(let j = 0; j< 4; j++){
                 const globo = $("<div></div>").addClass("globo").addClass(claseActual);
